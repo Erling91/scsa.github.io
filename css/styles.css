@@ -933,7 +933,8 @@ label[for^="sunday"],
 label[for^="monday"],
 label[for^="tuesday"],
 label[for^="wednesday"],
-label[for^="thursday"] {
+label[for^="thursday"],
+label[for^="friday"] {
     display: inline-block;
     background-color: var(--accent-color-2);
     color: #fff;
