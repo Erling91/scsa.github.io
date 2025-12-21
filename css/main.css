@@ -76,6 +76,13 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .cta-btn { background: var(--bright-blue); color: var(--white); padding: 1rem 2rem; font-size: 1.2rem; border-radius: 5px; transition: 0.3s; }
 .cta-btn:hover { background: #002266; }
 
+.club-hero {
+    background-image: url('../images/_DSC8730.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* parallax feel on desktop */
+}
+
 /* Responsive text sizing using clamp() – scales smoothly */
 .hero h1 {
     font-size: clamp(.5rem, 8vw, 3rem);   /* Min 2.5rem, ideal ~8% of width, max 5rem */
