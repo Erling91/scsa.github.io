@@ -78,7 +78,7 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 
 .club {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                      url('/images/teamFlex.jpg');
+                      url('../images/teamFlex.jpg');
 }
 
 /* Responsive text sizing using clamp() – scales smoothly */
