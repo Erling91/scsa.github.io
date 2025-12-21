@@ -133,6 +133,7 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: var(--na
 }
 
 /* Footer */
+/* Improved Responsive Footer */
 footer {
     background: var(--navy);
     color: var(--white);
@@ -141,12 +142,16 @@ footer {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;           /* 1 column on mobile */
     gap: 3rem;
     max-width: 1400px;
-    margin: auto;
+    margin: 0 auto 2rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 2rem;
+}
+
+.footer-column {
+    text-align: center;                   /* Center on mobile */
 }
 
 .footer-column h4 {
@@ -155,13 +160,13 @@ footer {
     font-size: 1.4rem;
 }
 
-.footer-column p, .footer-column ul li {
-    margin-bottom: 0.8rem;
-    font-size: 1rem;
-}
-
 .footer-column ul {
     list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 1rem;
 }
 
 .footer-column ul li a {
@@ -175,6 +180,7 @@ footer {
 
 .social-icons {
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -186,7 +192,30 @@ footer {
 }
 
 .social-icons a:hover {
-    color: var(--black);
+    color: var(--bright-blue);
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-column {
+        text-align: left;
+    }
+    .footer-column:first-child {
+        text-align: center; /* Keep logo column centered */
+    }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-column {
+        text-align: left;
+    }
 }
 
 .footer-bottom {
@@ -196,18 +225,6 @@ footer {
     opacity: 0.8;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .footer-content {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
 /* Responsive */
 @media (min-width: 768px) {
