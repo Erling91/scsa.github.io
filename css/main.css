@@ -76,11 +76,9 @@ nav { display: flex; justify-content: space-between; align-items: center; paddin
 .cta-btn { background: var(--bright-blue); color: var(--white); padding: 1rem 2rem; font-size: 1.2rem; border-radius: 5px; transition: 0.3s; }
 .cta-btn:hover { background: #002266; }
 
-.club-hero {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/_DSC8730.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* parallax feel on desktop */
+.club {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url('/images/_DSC8730.jpg');
 }
 
 /* Responsive text sizing using clamp() – scales smoothly */
